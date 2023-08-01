@@ -19,6 +19,7 @@ jobs:
           feed_list: "https://medium.com/feed/@vishalqw78"
       - name: Calculate counter
         run: echo "counter=$(( ${steps.stackoverflow_activity.outputs.counter} - 1 ))" >> $GITHUB_ENV
+        shell: bash
       - name: Update README
         run: |
           echo "<tr><td>${{ steps.stackoverflow_activity.outputs.title }}</td><td>${{ steps.stackoverflow_activity.outputs.url }}</td><td>${{ env.counter }}</td></tr>" >> README.md
