@@ -17,7 +17,6 @@ jobs:
         with:
           comment_tag_name: "STACKOVERFLOW"
           feed_list: "https://medium.com/feed/@username"
-          size: 1
           template: |
             <tr>
               <td>${{ steps.get_blog_post.outputs.results.title }}</td>
