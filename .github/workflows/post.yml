@@ -17,7 +17,7 @@ jobs:
           comment_tag_name: "STACKOVERFLOW"
           feed_list: "https://medium.com/feed/@vishalqw78"
           size: 1
-          custom_tags: "counter/count/"
+          custom_tags: "count/counter/"
           template: "<tr><td>$title</td><td>$url</td><td>$count</td></tr>"
       - name: Print Power Value
         run: echo "The power value is ${{ steps.get_blog_post.outputs.count }}"
