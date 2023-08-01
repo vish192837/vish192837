@@ -18,8 +18,7 @@ jobs:
           comment_tag_name: "STACKOVERFLOW"
           feed_list: "https://medium.com/feed/@vishalqw78"
       - name: Calculate counter
-        id: calculate_counter
-        echo "{counter}={$(( ${{ steps.stackoverflow_activity.outputs.counter }} - 1 ))}" >> $GITHUB_OUTPUT
+        run: echo "counter=$(( ${steps.stackoverflow_activity.outputs.counter} - 1 ))" >> $GITHUB_ENV
       - name: Update README
         run: |
-          echo "<tr><td>${{ steps.stackoverflow_activity.outputs.title }}</td><td>${{ steps.stackoverflow_activity.outputs.url }}</td><td>${{ $GITHUB_OUTPUT }}</td></tr>" >> README.md
+          echo "<tr><td>${{ steps.stackoverflow_activity.outputs.title }}</td><td>${{ steps.stackoverflow_activity.outputs.url }}</td><td>${{ env.counter }}</td></tr>" >> README.md
