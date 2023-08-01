@@ -1,0 +1,23 @@
+name: Latest Stack Overflow activity 2
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 * * * *'
+permissions:
+  contents: write
+jobs:
+  update-readme-with-blog:
+    name: Update this repo's README with latest activity from StackOverflow
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: gautamkrishnar/blog-post-workflow@v1
+        id: get_blog_post
+        with:
+          comment_tag_name: "STACKOVERFLOW"
+          feed_list: "https://medium.com/feed/@username"
+          size: 1
+          power: "{{some_value_from_stack_overflow_activity_data}}"
+          template: "<tr><td>$title</td><td>$url</td><td>$power</td></tr>"
+      - name: Print Power Value
+        run: echo "The power value is ${{ steps.get_blog_post.outputs.power }}"
