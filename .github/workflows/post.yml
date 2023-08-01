@@ -17,7 +17,7 @@ jobs:
           comment_tag_name: "STACKOVERFLOW"
           feed_list: "https://medium.com/feed/@username"
           size: 1
-          power: "{{some_value_from_stack_overflow_activity_data}}"
+          power: "{{counter - size}}"
           template: "<tr><td>$title</td><td>$url</td><td>$power</td></tr>"
       - name: Print Power Value
         run: echo "The power value is ${{ steps.get_blog_post.outputs.power }}"
