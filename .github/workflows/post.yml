@@ -16,7 +16,7 @@ jobs:
         uses: gautamkrishnar/blog-post-workflow@v1
         with:
           comment_tag_name: "STACKOVERFLOW"
-          feed_list: "https://medium.com/feed/@username"
+          feed_list: "https://medium.com/feed/@vishalqw78"
           template: |
             <tr>
               <td>${{ steps.get_blog_post.outputs.results.title }}</td>
