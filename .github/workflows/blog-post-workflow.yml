@@ -15,4 +15,4 @@ jobs:
         with:
           comment_tag_name: "STACKOVERFLOW"
           feed_list: "https://medium.com/feed/@vishalqw78"
-          template: "<tr><td>$title</td><td>$url</td> <td>$((${counter}-1))</td></tr>"
+          template: "<tr><td>$title</td><td>$url</td> <td>${{counter}}-${{1}}</td></tr>"
