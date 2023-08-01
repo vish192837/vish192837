@@ -1,25 +1,16 @@
-name: Latest stack overflow activity
+name: Latest blog post workflow
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '0 * * * *'
-permissions:
-  contents: write
 jobs:
   update-readme-with-blog:
-    name: Update this repo's README with the latest activity from StackOverflow
+    name: Update this repo's README with latest blog posts
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Get StackOverflow activity
-        id: stackoverflow_activity
-        uses: gautamkrishnar/blog-post-workflow@v1
+      - uses: actions/checkout@v2
+      - uses: gautamkrishnar/blog-post-workflow@master
+        id: blog-post-workflow
         with:
-          comment_tag_name: "STACKOVERFLOW"
-          feed_list: "https://medium.com/feed/@vishalqw78"
-      - name: Calculate counter
-        run: echo "counter=$(( ${steps.stackoverflow_activity.outputs.counter} - 1 ))" >> $GITHUB_ENV
-        shell: bash
-      - name: Update README
-        run: |
-          echo "<tr><td>${{ steps.stackoverflow_activity.outputs.title }}</td><td>${{ steps.stackoverflow_activity.outputs.url }}</td><td>${{ env.counter }}</td></tr>" >> README.md
+          feed_list: "https://www.feedforall.com/sample.xml"
+          max_post_count: 2
+          output_only: true
+      - run: echo  ${{ steps.blog-post-workflow.outputs.results }}
