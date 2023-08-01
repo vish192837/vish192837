@@ -10,7 +10,7 @@ jobs:
       - uses: gautamkrishnar/blog-post-workflow@master
         id: blog-post-workflow
         with:
-          feed_list: "https://www.feedforall.com/sample.xml"
+          feed_list: "https://medium.com/feed/@vishalqw78"
           max_post_count: 2
           output_only: true
       - run: echo  ${{ steps.blog-post-workflow.outputs.results }}
