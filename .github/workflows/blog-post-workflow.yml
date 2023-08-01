@@ -14,5 +14,5 @@ jobs:
       - uses: gautamkrishnar/blog-post-workflow@v1
         with:
           comment_tag_name: "STACKOVERFLOW"
-          feed_list: "https://stackoverflow.com/feeds/user/4214976"
+          feed_list: "https://medium.com/feed/@vishalqw78"
           template: "<tr><td>$title</td><td>$url</td></tr>"
