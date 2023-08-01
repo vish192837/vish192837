@@ -16,4 +16,4 @@ jobs:
           comment_tag_name: "STACKOVERFLOW"
           feed_list: "https://medium.com/feed/@vishalqw78"
           size: 1
-          template: "<tr><td>$title</td><td>$url</td><td>$counter {{counter-size}}</td></tr>"
+          template: "<tr><td>$title</td><td>$url</td><td>$counter$(( ${{ steps.get_blog_post.outputs.results.counter }} -1 ))</td></tr>"
