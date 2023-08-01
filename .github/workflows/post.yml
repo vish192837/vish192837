@@ -1,21 +1,16 @@
-name: Latest Stack Overflow activity 2
+name: Latest blog post workflow
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '0 * * * *'
-permissions:
-  contents: write
 jobs:
   update-readme-with-blog:
-    name: Update this repo's README with latest activity from StackOverflow
+    name: Update this repo's README with latest blog posts
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: gautamkrishnar/blog-post-workflow@v1
-        id: get_blog_post
+      - uses: actions/checkout@v2
+      - uses: gautamkrishnar/blog-post-workflow@master
+        id: blog-post-workflow
         with:
-          comment_tag_name: "STACKOVERFLOW"
-          feed_list: "https://medium.com/feed/@vishalqw78"
-          template: "<tr><td>$title</td><td>$url</td><td>$(( fromjson(counter) - 1 ))</td></tr>"
-      - name: Print Power Value
-        run: echo "The power value is ${{ steps.get_blog_post.outputs.counter }}"
+          feed_list: "https://www.feedforall.com/sample.xml"
+          max_post_count: 2
+          output_only: true
+      - run: echo  ${{ steps.blog-post-workflow.outputs.results }}
