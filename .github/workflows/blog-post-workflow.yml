@@ -1,19 +1,25 @@
-name: Latest stack oveflow activity
+name: Latest stack overflow activity
 on:
   workflow_dispatch:
   schedule:
-    - cron:  '0 * * * *'
+    - cron: '0 * * * *'
 permissions:
-      contents: write
+  contents: write
 jobs:
   update-readme-with-blog:
-    name: Update this repo's README with latest activity from StackOverflow
+    name: Update this repo's README with the latest activity from StackOverflow
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: gautamkrishnar/blog-post-workflow@v1
+      - name: Get StackOverflow activity
+        id: stackoverflow_activity
+        uses: gautamkrishnar/blog-post-workflow@v1
         with:
           comment_tag_name: "STACKOVERFLOW"
           feed_list: "https://medium.com/feed/@vishalqw78"
-          size: 1
-          template: "<tr><td>$title</td><td>$url</td><td>$counter$(( ${{ $counter }} -1 ))</td></tr>"
+      - name: Calculate counter
+        id: calculate_counter
+        run: echo "::set-output name=counter::$(( ${{ steps.stackoverflow_activity.outputs.counter }} - 1 ))"
+      - name: Update README
+        run: |
+          echo "<tr><td>${{ steps.stackoverflow_activity.outputs.title }}</td><td>${{ steps.stackoverflow_activity.outputs.url }}</td><td>${{ steps.calculate_counter.outputs.counter }}</td></tr>" >> README.md
