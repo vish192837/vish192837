@@ -1,4 +1,4 @@
-name: Latest Stack Overflow activity 2
+name: Latest Stack Overflow activity
 on:
   workflow_dispatch:
   schedule:
@@ -7,7 +7,7 @@ permissions:
   contents: write
 jobs:
   update-readme-with-blog:
-    name: Update this repo's README with latest activity from StackOverflow
+    name: Update this repo's README with the latest activity from StackOverflow
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -17,14 +17,15 @@ jobs:
         with:
           comment_tag_name: "STACKOVERFLOW"
           feed_list: "https://medium.com/feed/@vishalqw78"
+          size: 1
           template: |
             <tr>
-              <td>${{ steps.get_blog_post.outputs.results.title }}</td>
-              <td>${{ steps.get_blog_post.outputs.results.url }}</td>
-              <td>${{ steps.get_blog_post.outputs.results.counter }}</td>
+              <td>${{ steps.get_blog_post.outputs.title }}</td>
+              <td>${{ steps.get_blog_post.outputs.url }}</td>
+              <td>${{ steps.get_blog_post.outputs.counter }}</td>
             </tr>
       - name: Calculate and update the counter value
-        run: echo "::set-output name=updated_counter::$(( ${{ steps.get_blog_post.outputs.results.counter }} - 1 ))"
-        id: update_counter
+        run: echo "${{ steps.get_blog_post.outputs.counter }}" >> $GITHUB_STATE/updated_counter
       - name: Print Power Value
-        run: echo "The power value is ${{ steps.update_counter.outputs.results.updated_counter }}"
+        id: print_counter
+        run: echo "::set-output name=updated_counter::${{ steps.get_blog_post.outputs.counter }}"
