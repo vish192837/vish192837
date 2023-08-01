@@ -1,19 +1,36 @@
-name: Latest stack oveflow activity
+name: Update README and Iterate Value
+
 on:
-  workflow_dispatch:
-  schedule:
-    - cron:  '0 * * * *'
-permissions:
-      contents: write
+  push:
+    branches:
+      - main
+
 jobs:
-  update-readme-with-blog:
-    name: Update this repo's README with latest activity from StackOverflow
+  update_readme_and_iterate:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
-      - uses: gautamkrishnar/blog-post-workflow@v1
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Git
+        run: |
+          git config --global user.name "Your GitHub Username"
+          git config --global user.email "your-email@example.com"
+
+      - name: Update README and Iterate Value
+        run: |
+          # Define the maximum value for iteration
+          max_value=10
+
+          # Iterate and update the value in the README
+          for i in $(seq 0 $max_value); do
+            sed -i "s/VALUE_TO_UPDATE/$i/" README.md
+            git add README.md
+            git commit -m "Update README with value: $i"
+          done
+
+      - name: Push changes
+        uses: ad-m/github-push-action@v0.6.0
         with:
-          comment_tag_name: "STACKOVERFLOW"
-          feed_list: "https://medium.com/feed/@vishalqw78"
-          size: 1
-          template: "<tr><td>$title</td><td>$url</td><td>$counter$(( ${{ steps.get_blog_post.outputs.results.counter }} -1 ))</td></tr>"
+          github_token: ${{ secrets.GITHUB_TOKEN }}
