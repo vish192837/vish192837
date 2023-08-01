@@ -27,5 +27,8 @@
 <!-- BLOG-POST-LIST:START -->
 <!-- BLOG-POST-LIST:END -->
 
-### :writing_hand: Blog Posts :
-
+### Latest StackOveflow activity of [@gautamkrishnar](https://github.com/gautamkrishnar)
+<table>
+  <tr><th>Title</th><th>Link</th></tr>
+  <!-- STACKOVERFLOW:START --><!-- STACKOVERFLOW:END -->
+</table>
