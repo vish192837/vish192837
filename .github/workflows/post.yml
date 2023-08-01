@@ -1,31 +1,19 @@
-name: Latest Stack Overflow activity 222
+name: Latest stack oveflow activity
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 * * * *'
+    - cron:  '0 * * * *'
 permissions:
-  contents: write
+      contents: write
 jobs:
   update-readme-with-blog:
     name: Update this repo's README with latest activity from StackOverflow
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Get StackOverflow activity
-        id: get_blog_post
-        uses: gautamkrishnar/blog-post-workflow@v1
+      - uses: gautamkrishnar/blog-post-workflow@v1
         with:
           comment_tag_name: "STACKOVERFLOW"
           feed_list: "https://medium.com/feed/@vishalqw78"
           size: 1
-          template: |
-            <tr>
-              <td>${{ steps.get_blog_post.outputs.title }}</td>
-              <td>${{ steps.get_blog_post.outputs.url }}</td>
-              <td>${{ steps.get_blog_post.outputs.counter }}</td>
-            </tr>
-      - name: Calculate and update the counter value
-        run: echo "${{ steps.get_blog_post.outputs.counter }}" > $HOME/updated_counter
-      - name: Print Power Value
-        id: print_counter
-        run: echo "::set-output name=updated_counter::${{ steps.get_blog_post.outputs.counter }}"
+          template: "<tr><td>$title</td><td>$url</td><td>$counter$(( ${{ steps.get_blog_post.outputs.results.counter }} -1 ))</td></tr>"
