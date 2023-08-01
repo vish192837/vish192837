@@ -30,9 +30,5 @@
 ### Latest StackOveflow activity of [@gautamkrishnar](https://github.com/gautamkrishnar)
 <table>
   <tr><th>Title</th><th>Link</th></tr>
-  <!-- STACKOVERFLOW:START --><tr>
-  <td></td>
-  <td></td>
-  <td></td>
-</tr><!-- STACKOVERFLOW:END -->
+  <!-- STACKOVERFLOW:START --><tr><td>Build a SpotifyData CLUI with Inquirer</td><td>https://medium.com/@vishalqw78/build-a-spotifydata-clui-with-inquirer-3109641e23c4?source=rss-a16f9755829------2</td><td>1 {{counter-size}}</td></tr><!-- STACKOVERFLOW:END -->
 </table>
