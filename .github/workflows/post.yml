@@ -15,15 +15,13 @@ jobs:
 
       - name: Set up Git
         run: |
-          git config --global user.name "Your GitHub Username"
-          git config --global user.email "your-email@example.com"
+          git config --global user.name "vishalqw78"
+          git config --global user.email "vishalpalqw78@gmail.com"
 
       - name: Update README and Iterate Value
         run: |
-          # Define the maximum value for iteration
           max_value=10
 
-          # Iterate and update the value in the README
           for i in $(seq 0 $max_value); do
             sed -i "s/VALUE_TO_UPDATE/$i/" README.md
             git add README.md
