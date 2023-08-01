@@ -14,4 +14,4 @@ jobs:
           feed_list: "https://medium.com/feed/@vishalqw78"
           max_post_count: 2
           output_only: true
-      - run: echo  ${{ steps.blog-post-workflow.outputs.results.size }}
+      - run: echo  ${{ steps.blog-post-workflow.outputs.results }}
