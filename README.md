@@ -26,254 +26,72 @@
 
 <!-- BLOG-POST-LIST:START -->
 # medium-blog-cards-workflow
-<style>
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
+<svg fill="none" viewBox="0 0 600 300" width="600" height="300" xmlns="http://www.w3.org/2000/svg">
+  <foreignObject width="100%" height="100%">
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <style>
+        @keyframes hi  {
+            0% { transform: rotate( 0.0deg) }
+           10% { transform: rotate(14.0deg) }
+           20% { transform: rotate(-8.0deg) }
+           30% { transform: rotate(14.0deg) }
+           40% { transform: rotate(-4.0deg) }
+           50% { transform: rotate(10.0deg) }
+           60% { transform: rotate( 0.0deg) }
+          100% { transform: rotate( 0.0deg) }
+        }
 
-:root {
-  --purple: hsl(240, 80%, 89%);
-  --pink: hsl(0, 59%, 94%);
-  --light-bg: hsl(204, 37%, 92%);
-  --light-gray-bg: hsl(0, 0%, 94%);
-  --white: hsl(0, 0%, 100%);
-  --dark: hsl(0, 0%, 7%);
-  --text-gray: hsl(0, 0%, 30%);
-}
+        @keyframes gradient {
+          0% {
+            background-position: 0% 50%;
+          }
+          50% {
+            background-position: 100% 50%;
+          }
+          100% {
+            background-position: 0% 50%;
+          }
+        }
 
-body {
-  font-family: "Space Grotesk", sans-serif;
-  color: var(--dark);
-}
+        .container {
+          background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+          background-size: 400% 400%;
+          animation: gradient 15s ease infinite;
 
-h3 {
-  font-size: 1em;
-  font-weight: 700;
-}
+          width: 100%;
+          height: 300px;
 
-p {
-  font-size: 0.8em;
-  line-height: 1.7;
-  font-weight: 300;
-  color: var(--text-gray);
-}
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: white;
 
-.description {
-  white-space: wrap;
-}
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
+        .hi {
+          animation: hi 1.5s linear -0.5s infinite;
+          display: inline-block;
+          transform-origin: 70% 70%;
+        }
 
-.wrap {
-  display: flex;
-  justify: space-between;
-  align-items: stretch;
-  width: 100%;
-  gap: 24px;
-  padding: 24px;
-  flex-wrap: wrap;
-}
+        @media (prefers-reduced-motion) {
+          .container {
+            animation: none;
+          }
 
-.box {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  position: relative;
-  padding: 24px;
-  background: #fff;
-}
+          .hi {
+            animation: none;
+          }
+        }
+      </style>
 
-.box-top {
-  border-radius:10%;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  gap: 12px;
-  margin-bottom: 36px;
-}
-
-.box-image {
-  border-radius:10%;
-  width: 112px;
-  height: 112px;
-  object-fit: cover;
-  object-position: 50% 20%;
-}
-
-.title-flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.box-title {
-  border-left: 3px solid var(--purple);
-  padding-left: 12px;
-}
-
-.user-follow-info {
-  color: hsl(0, 0%, 60%);
-}
-
-/* RESPONSIVE QUERIES */
-
-@media (min-width: 320px) {
-  .title-flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: start;
-  }
-  .user-follow-info {
-    margin-top: 6px;
-  }
-}
-
-@media (min-width: 460px) {
-  .title-flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: start;
-  }
-  .user-follow-info {
-    margin-top: 6px;
-  }
-}
-
-@media (min-width: 640px) {
-  .box {
-    flex-basis: calc(50% - 12px);
-  }
-  .title-flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: start;
-  }
-  .user-follow-info {
-    margin-top: 6px;
-  }
-}
-
-@media (min-width: 840px) {
-  .title-flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: start;
-  }
-  .user-follow-info {
-    margin-top: 6px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .box {
-    flex-basis: calc(33.3% - 16px);
-  }
-  .title-flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: start;
-  }
-  .user-follow-info {
-    margin-top: 6px;
-  }
-}
-
-@media (min-width: 1100px) {
-  .box {
-    flex-basis: calc(25% - 18px);
-  }
-}
-
-</style>
-<div id="identifier" class="wrap">
-  <div id="identifier" class="box">
-    <div id="identifier" class="box-top">
-      <img id="identifier" class="box-image" src="https://images.unsplash.com/photo-1622219809260-ce065fc5277f?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMzMwNjYxOQ&ixlib=rb-1.2.1&q=85" alt="Girl Eating Pizza">
-      <div id="identifier" class="title-flex">
-        <h3 id="identifier" class="box-title">Kelsie Meyer</h3>
-        <p id="identifier" class="user-follow-info">17 Projects</p>
+      <div class="container">
+        <h1>Hi there, my name is Nikola <div class="hi">👋</div></h1>
       </div>
-      <p id="identifier" class="description">Whipped steamed roast cream beans macchiato skinny grinder café. Iced grinder go mocha steamed grounds cultivar panna aroma.</p>
     </div>
-     
-  </div>
-  <div id="identifier" class="box">
-    <div id="identifier" class="box-top">
-      <img id="identifier" class="box-image" src="https://images.unsplash.com/photo-1622219809260-ce065fc5277f?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMzMwNjYxOQ&ixlib=rb-1.2.1&q=85" alt="Girl Eating Pizza">
-      <div id="identifier" class="title-flex">
-        <h3 id="identifier" class="box-title">Kelsie Meyer</h3>
-        <p id="identifier" class="user-follow-info">17 Projects</p>
-      </div>
-      <p id="identifier" class="description">Whipped steamed roast cream beans macchiato skinny grinder café. Iced grinder go mocha steamed grounds cultivar panna aroma.</p>
-    </div>
-     
-  </div>
-  <div id="identifier" class="box">
-    <div id="identifier" class="box-top">
-      <img id="identifier" class="box-image" src="https://images.unsplash.com/photo-1622219809260-ce065fc5277f?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMzMwNjYxOQ&ixlib=rb-1.2.1&q=85" alt="Girl Eating Pizza">
-      <div id="identifier" class="title-flex">
-        <h3 id="identifier" class="box-title">Kelsie Meyer</h3>
-        <p id="identifier" class="user-follow-info">17 Projects</p>
-      </div>
-      <p id="identifier" class="description">Whipped steamed roast cream beans macchiato skinny grinder café. Iced grinder go mocha steamed grounds cultivar panna aroma.</p>
-    </div>
-     
-  </div>
-  <div id="identifier" class="box">
-    <div id="identifier" class="box-top">
-      <img id="identifier" class="box-image" src="https://images.unsplash.com/photo-1622219809260-ce065fc5277f?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMzMwNjYxOQ&ixlib=rb-1.2.1&q=85" alt="Girl Eating Pizza">
-      <div id="identifier" class="title-flex">
-        <h3 id="identifier" class="box-title">Kelsie Meyer</h3>
-        <p id="identifier" class="user-follow-info">17 Projects</p>
-      </div>
-      <p id="identifier" class="description">Whipped steamed roast cream beans macchiato skinny grinder café. Iced grinder go mocha steamed grounds cultivar panna aroma.</p>
-    </div>
-     
-  </div>
-  <div id="identifier" class="box">
-    <div id="identifier" class="box-top">
-      <img id="identifier" class="box-image" src="https://cdn-images-1.medium.com/max/2600/0*unAut4OaV4sumjTS" alt="Girl Eating Pizza">
-      <div id="identifier" class="title-flex">
-        <h3 id="identifier" class="box-title">ow to Deploy a Flask Application to Render</h3>
-        <p id="identifier" class="user-follow-info">17 Projects</p>
-      </div>
-      <p id="identifier" class="description">Whipped steamed roast cream beans macchiato skinny grinder café. Iced grinder go mocha steamed grounds cultivar panna aroma.</p>
-    </div>
-     
-  </div>
-  <div id="identifier" class="box">
-    <div id="identifier" class="box-top">
-      <img id="identifier" class="box-image" src="https://images.unsplash.com/photo-1622219809260-ce065fc5277f?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMzMwNjYxOQ&ixlib=rb-1.2.1&q=85" alt="Girl Eating Pizza">
-      <div id="identifier" class="title-flex">
-        <h3 id="identifier" class="box-title">Kelsie Meyer</h3>
-        <p id="identifier" class="user-follow-info">17 Projects</p>
-      </div>
-      <p id="identifier" class="description">Whipped steamed roast cream beans macchiato skinny grinder café. Iced grinder go mocha steamed grounds cultivar panna aroma.</p>
-    </div>
-     
-  </div>
-  <div id="identifier" class="box">
-    <div id="identifier" class="box-top">
-      <img id="identifier" class="box-image" src="https://images.unsplash.com/photo-1622219809260-ce065fc5277f?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMzMwNjYxOQ&ixlib=rb-1.2.1&q=85" alt="Girl Eating Pizza">
-      <div id="identifier" class="title-flex">
-        <h3 id="identifier" class="box-title">Kelsie Meyer</h3>
-        <p id="identifier" class="user-follow-info">17 Projects</p>
-      </div>
-      <p id="identifier" class="description">Whipped steamed roast cream beans macchiato skinny grinder café. Iced grinder go mocha steamed grounds cultivar panna aroma.</p>
-    </div>
-     
-  </div>
-</div>
+  </foreignObject>
+</svg>
 <!-- BLOG-POST-LIST:END -->
 
 ### Latest StackOveflow activity of [@gautamkrishnar](https://github.com/gautamkrishnar)
