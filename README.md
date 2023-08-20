@@ -39,7 +39,7 @@
 </table>
 
 <div>
-<a href="https://github-blog-cards.vercel.app/blog?username=aadityasinha009&theme=neon"></a><img href ="https://github-blog-cards.vercel.app/blog?username=aadityasinha009&theme=neon" title="a title" alt="Alt text" src="https://github-blog-cards.vercel.app/blog?theme=neon"></a>
+<a href="https://github-blog-cards.vercel.app/blog?username=aadityasinha009&theme=neon"><img href ="https://github-blog-cards.vercel.app/blog?username=aadityasinha009&theme=neon" title="a title" alt="Alt text" src="https://github-blog-cards.vercel.app/blog?theme=neon"></a>
 
 <a href="https://github-test-vishalqw78.vercel.app/blogsvg"><img title="a title" alt="Alt text" src="https://github-test-vishalqw78.vercel.app/blogsvg"></a>
 
