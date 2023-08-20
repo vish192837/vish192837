@@ -39,7 +39,7 @@
 </table>
 
 <div>
-<img title="a title" alt="Alt text" src="https://github-test-mocha.vercel.app/api?param2=7">
+<a href="www.google.com"><img title="a title" alt="Alt text" src="https://github-test-mocha.vercel.app/api?param2=7"></div><a>
 
 <img title="a title" alt="Alt text" src="https://github-test-mocha.vercel.app/api?param2=7">
 
