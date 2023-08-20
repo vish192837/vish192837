@@ -153,6 +153,8 @@ You can use the ```?theme=``` to change between the different theme.
 <img src="https://github-blog-cards.vercel.app/blog?theme=slateorange&username=https://lo-victoria.com/&blogname=hashnode&index=2"/>
 </div>
 
+
+
 <details>
 <summary>:eyes: The RSS Feed Of Available Blogs</summary>
 
@@ -163,15 +165,15 @@ You can use the ```?theme=``` to change between the different theme.
   </tr>
   <tr>
     <td>Medium</td>
-    <td><a href="https://medium.com/feed/@your-username">Medium RSS</a></td>
+    <td>"https://medium.com/feed/@your-username">https://medium.com/feed/@your-username</a></td>
   </tr>
   <tr>
     <td>Dev.to</td>
-    <td><a href="https://dev.to/feed/your-username">Dev.to RSS</a></td>
+    <td><a href="https://dev.to/feed/@username">https://dev.to/feed/your-username</a></td>
   </tr>
   <tr>
     <td>Hashnode</td>
-    <td><a href="https://hashnode.com/rss/@your-username">Hashnode RSS</a></td>
+    <td><a href="blogname/rss.xml">https://blogname/rss.xml</a></td>
   </tr>
 </table>
 
