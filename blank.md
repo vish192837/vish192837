@@ -102,8 +102,8 @@ That Card that rendered
 
 That Card that rendered
 
-<a href="https://github-blog-cards.vercel.app/blog?username=vishalqw78&blogname=medium">
-<img src="https://github-blog-cards.vercel.app/blog?username=vishalqw78&blogname=medium"/>
+<a href="https://github-blog-cards.vercel.app/blog?username=nevodavid10&blogname=dev">
+<img src="https://github-blog-cards.vercel.app/blog?username=nevodavid10&blogname=dev"/>
 </a>
 
 
