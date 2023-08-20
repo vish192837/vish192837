@@ -39,9 +39,9 @@
 </table>
 
 <div>
-<img title="a title" alt="Alt text" src="https://github-test-sigma.vercel.app/api?param2=7">
+<img title="a title" alt="Alt text" src="https://github-blog-cards.vercel.app/blog?theme=neon">
 
-<img title="a title" alt="Alt text" src="https://github-test-sigma.vercel.app/api?param2=7">
+<img title="a title" alt="Alt text" src="https://github-blog-cards.vercel.app/blog?theme=neon">
 
 </div>
 
