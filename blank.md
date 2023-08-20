@@ -165,7 +165,7 @@ You can use the ```?theme=``` to change between the different theme.
   </tr>
   <tr>
     <td>Medium</td>
-    <td><a>"https://medium.com/feed/@your-username">https://medium.com/feed/@your-username</a></td>
+    <td><a href="https://medium.com/feed/@your-username">https://medium.com/feed/@your-username</a></td>
   </tr>
   <tr>
     <td>Dev.to</td>
