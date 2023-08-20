@@ -88,8 +88,8 @@ That Card that rendered
 
 That Card that rendered
 
-<a href="https://github-blog-cards.vercel.app/blog?username=https://lo-victoria.com/&blogname=dev">
-<img src="https://github-blog-cards.vercel.app/blog?username=https://lo-victoria.com/&blogname=dev"/>
+<a href="https://github-blog-cards.vercel.app/blog?username=https://lo-victoria.com/&blogname=hashnode">
+<img src="https://github-blog-cards.vercel.app/blog?username=https://lo-victoria.com/&blogname=hashnode"/>
 </a>
 
 #### Dev Example
@@ -106,6 +106,52 @@ That Card that rendered
 <img src="https://github-blog-cards.vercel.app/blog?username=corpcubite&blogname=dev"/>
 </a>
 
+### Index
+
+The Index Parameter is used to fetch the n<sup>th</sup> from last Blog.
+
+#### Example 
+
+This will result in fetching the 2<sup>nd</sup> and 3<sup>rd</sup> last Blog from Hashnode of user profile.
+>[!NOTE]
+> If the index is not available or greater than 10 it will result in fetching the Most Recent Blog.
+
+```md
+<a href="https://github-blog-cards.vercel.app/blog?username=https://lo-victoria.com/&blogname=hashnode&index=2">
+<img src="https://github-blog-cards.vercel.app/blog?username=https://lo-victoria.com/&blogname=hashnode&index=2"/>
+</a>
+<a href="https://github-blog-cards.vercel.app/blog?username=https://lo-victoria.com/&blogname=hashnode&index=3">
+<img src="https://github-blog-cards.vercel.app/blog?username=https://lo-victoria.com/&blogname=hashnode&index=3"/>
+</a>
+```
+<a href="https://github-blog-cards.vercel.app/blog?username=https://lo-victoria.com/&blogname=hashnode&index=2">
+<img src="https://github-blog-cards.vercel.app/blog?username=https://lo-victoria.com/&blogname=hashnode&index=2"/>
+</a>
+<a href="https://github-blog-cards.vercel.app/blog?username=https://lo-victoria.com/&blogname=hashnode&index=3">
+<img src="https://github-blog-cards.vercel.app/blog?username=https://lo-victoria.com/&blogname=hashnode&index=3"/>
+</a>
+
+
+### Themes
+
+You can use the ```?theme=``` to change between the different theme.
+
+#### Theme Demo
+
+<div>
+<img src="https://github-blog-cards.vercel.app/blog?theme=radical&username=https://lo-victoria.com/&blogname=hashnode&index=2"/>
+<img src="https://github-blog-cards.vercel.app/blog?theme=github&username=https://lo-victoria.com/&blogname=hashnode&index=2"/>
+<img src="https://github-blog-cards.vercel.app/blog?theme=dark&username=https://lo-victoria.com/&blogname=hashnode&index=2"/>
+<img src="https://github-blog-cards.vercel.app/blog?theme=neon&username=https://lo-victoria.com/&blogname=hashnode&index=2"/>
+<img src="https://github-blog-cards.vercel.app/blog?theme=cobalt&username=https://lo-victoria.com/&blogname=hashnode&index=2"/>
+<img src="https://github-blog-cards.vercel.app/blog?theme=tokyonight&username=https://lo-victoria.com/&blogname=hashnode&index=2"/>
+<img src="https://github-blog-cards.vercel.app/blog?theme=synthwave&username=https://lo-victoria.com/&blogname=hashnode&index=2"/>
+<img src="https://github-blog-cards.vercel.app/blog?theme=dracula&username=https://lo-victoria.com/&blogname=hashnode&index=2"/>
+<img src="https://github-blog-cards.vercel.app/blog?theme=panda&username=https://lo-victoria.com/&blogname=hashnode&index=2"/>
+<img src="https://github-blog-cards.vercel.app/blog?theme=highcontrast&username=https://lo-victoria.com/&blogname=hashnode&index=2"/>
+<img src="https://github-blog-cards.vercel.app/blog?theme=github_dark&username=https://lo-victoria.com/&blogname=hashnode&index=2"/>
+<img src="https://github-blog-cards.vercel.app/blog?theme=slateorange&username=https://lo-victoria.com/&blogname=hashnode&index=2"/>
+</div>
 
 <details>
 <summary>:eyes: The RSS Feed Of Available Blogs</summary>
