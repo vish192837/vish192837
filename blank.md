@@ -92,7 +92,7 @@ That Card that rendered
 <img src="https://github-blog-cards.vercel.app/blog?username=vishalqw78&blogname=medium"/>
 </a>
 
-#### Dev.to Example
+#### Dev Example
 
 ```md
 <a href="https://github-blog-cards.vercel.app/blog?username=vishalqw78&blogname=medium">
