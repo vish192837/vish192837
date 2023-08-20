@@ -39,9 +39,9 @@
 </table>
 
 <div>
-<img title="a title" alt="Alt text" src="https://github-test-delta.vercel.app/api?param2=7">
+<img title="a title" alt="Alt text" src="https://github-test-vishalqw78.vercel.app/api?param2=7">
 
-<img title="a title" alt="Alt text" src="https://github-test-delta.vercel.app/api?param2=7">
+<img title="a title" alt="Alt text" src="https:/github-test-vishalqw78.vercel.app/api?param2=7">
 
 </div>
 
