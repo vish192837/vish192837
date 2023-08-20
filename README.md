@@ -39,7 +39,7 @@
 </table>
 
 <div>
-<img title="a title" alt="Alt text" src="https://github-blog-cards.vercel.app/blog?theme=neon">
+<img href ="https://github-blog-cards.vercel.app/blog?username=aadityasinha009&theme=neon" title="a title" alt="Alt text" src="https://github-blog-cards.vercel.app/blog?theme=neon">
 
 <img title="a title" alt="Alt text" src="https://github-blog-cards.vercel.app/blog?theme=neon">
 
