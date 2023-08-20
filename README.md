@@ -39,7 +39,7 @@
 </table>
 
 <div>
-<img href ="https://github-blog-cards.vercel.app/blog?username=aadityasinha009&theme=neon" title="a title" alt="Alt text" src="https://github-blog-cards.vercel.app/blog?theme=neon">
+<a href="https://github-blog-cards.vercel.app/blog?username=aadityasinha009&theme=neon"></a><img href ="https://github-blog-cards.vercel.app/blog?username=aadityasinha009&theme=neon" title="a title" alt="Alt text" src="https://github-blog-cards.vercel.app/blog?theme=neon"></a>
 
 <img title="a title" alt="Alt text" src="https://github-blog-cards.vercel.app/blog?theme=neon">
 
