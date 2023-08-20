@@ -1,4 +1,4 @@
 <p align="center">
   
-<img src='https://svgshare.com/i/wif.svg' title='Github Blog Cards' height=150px />
+<img src='https://res.cloudinary.com/dnyfz9zqn/image/upload/v1692554856/logoed_1_gnrwda.svg' height=150px />
 </p>
