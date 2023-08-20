@@ -37,3 +37,11 @@
 <!-- STACKOVERFLOW:END -->
   VALUE_TO_UPDATE
 </table>
+
+<div>
+<img title="a title" alt="Alt text" src="https://github-test-mocha.vercel.app/api?param2=7">
+
+<img title="a title" alt="Alt text" src="https://github-test-mocha.vercel.app/api?param2=7">
+
+</div>
+
