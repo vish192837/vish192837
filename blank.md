@@ -81,29 +81,29 @@ That Card that rendered
 #### Hashnode Example
 
 ```md
-<a href="https://github-blog-cards.vercel.app/blog?username=vishalqw78&blogname=medium">
-<img src="https://github-blog-cards.vercel.app/blog?username=vishalqw78&blogname=medium"/>
+<a href="https://github-blog-cards.vercel.app/blog?username=nevodavid10&blogname=hashnode">
+<img src="https://github-blog-cards.vercel.app/blog?username=nevodavid10&blogname=hashnode"/>
 </a>
 ```
 
 That Card that rendered
 
-<a href="https://github-blog-cards.vercel.app/blog?username=vishalqw78&blogname=medium">
-<img src="https://github-blog-cards.vercel.app/blog?username=vishalqw78&blogname=medium"/>
+<a href="https://github-blog-cards.vercel.app/blog?username=https://lo-victoria.com/&blogname=dev">
+<img src="https://github-blog-cards.vercel.app/blog?username=https://lo-victoria.com/&blogname=dev"/>
 </a>
 
 #### Dev Example
 
 ```md
-<a href="https://github-blog-cards.vercel.app/blog?username=vishalqw78&blogname=medium">
-<img src="https://github-blog-cards.vercel.app/blog?username=vishalqw78&blogname=medium"/>
+<a href="https://github-blog-cards.vercel.app/blog?username=corpcubite&blogname=dev">
+<img src="https://github-blog-cards.vercel.app/blog?username=corpcubite&blogname=dev"/>
 </a>
 ```
 
 That Card that rendered
 
-<a href="https://github-blog-cards.vercel.app/blog?username=nevodavid10&blogname=dev">
-<img src="https://github-blog-cards.vercel.app/blog?username=nevodavid10&blogname=dev"/>
+<a href="https://github-blog-cards.vercel.app/blog?username=corpcubite&blogname=dev">
+<img src="https://github-blog-cards.vercel.app/blog?username=corpcubite&blogname=dev"/>
 </a>
 
 
