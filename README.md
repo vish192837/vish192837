@@ -39,9 +39,9 @@
 </table>
 
 <div>
-<a href="https://anuradha.hashnode.dev/serverless-functions-faas-with-vercel#heading-step-4-deploy-a-serverless-function" target='_blank'><img title="a title" alt="Alt text" src="https://github-test-mocha.vercel.app/api?param2=7"><a>
+<img title="a title" alt="Alt text" src="https://github-test-delta.vercel.app/api?param2=7">
 
-<img title="a title" alt="Alt text" src="https://github-test-mocha.vercel.app/api?param2=7">
+<img title="a title" alt="Alt text" src="https://github-test-delta.vercel.app/api?param2=7">
 
 </div>
 
