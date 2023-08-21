@@ -1,49 +1,139 @@
-<div align="center">
-  <img src="https://media.giphy.com/media/dWesBcTLavkZuG35MI/giphy.gif" width="600" height="300"/>
-</div>
-- 🔭 I’m currently working on NextBlogs
-- 🌱 I’m currently learning NEXTJS
-- 👯 I’m looking to collaborate on ...
+<p align="center">
+  
+<img src="https://res.cloudinary.com/dnyfz9zqn/image/upload/v1692555001/logoed_1_b07o9w.svg"/>
+#
+<p align="center">Get Dynamic Blog Card on your READMEs!</p>
+</p>
+# Introduction
+Github Blog Cards enables automatic rendering of dynamic blog cards, showcasing from your 10 latest articles from platforms like [Medium](https://medium.com/), [Dev](https://dev.to/), [Hashnode](https://hashnode.com/). Elevate your profile, save time, and engage readers directly on your GitHub readme.
+By integrating this feature, your profile gains visual appeal and keeps visitors informed about your latest writings.
+<img src="https://github-blog-cards.vercel.app/blog?username=vishalqw78&blogname=medium"/>
+# Usage and Features
+- [Github Blog Card](#github-blog-card)
+    - [Demo](#demo)
+    - [Usage](#usage)
+        - [Username and Blogname](#username-and-blogname)
+        - [Available Blog Sites Examples](#available-blog-sites-examples)
+           - [Medium Example](#medium-example)
+           - [Hashnode Example](#hashnode-example)
+           - [Dev Example](#dev-example)
+        - [Index](#index)
+        - [Themes](#themes)
+           - [Themes Demo](#themes-demo)
+# Github Blog Card
+Paste this into your markdown content.
+Change the `?username=` and `&blogname=` value to your GitHub username and blogname from options `medium` , `dev` and `hashnode`.
 
-### :hammer_and_wrench: Languages and Tools :
+```md
+<a href="https://github-blog-cards.vercel.app/blog?username=vishalqw78&blogname=medium">
+<img src="https://github-blog-cards.vercel.app/blog?username=vishalqw78&blogname=medium"/>
+</a>
+```
+## Demo
+
+<a href="https://github-blog-cards.vercel.app/blog?username=vishalqw78&blogname=medium">
+<img src="https://github-blog-cards.vercel.app/blog?username=vishalqw78&blogname=medium"/>
+</a>
+
+## Usage
+How to use the Github Blog Cards
+	@@ -67,44 +63,32 @@ There are Three Available Blog Site to fetch and display the Blog Post Cards.
+#### Medium Example
+
+```md
+<a href="https://github-blog-cards.vercel.app/blog?username=vishalqw78&blogname=medium">
+<img src="https://github-blog-cards.vercel.app/blog?username=vishalqw78&blogname=medium"/>
+</a>
+```
+
+That Card that rendered
+
+<a href="https://github-blog-cards.vercel.app/blog?username=vishalqw78&blogname=medium">
+<img src="https://github-blog-cards.vercel.app/blog?username=vishalqw78&blogname=medium"/>
+</a>
+
+#### Hashnode Example
+
+```md
+<a href="https://github-blog-cards.vercel.app/blog?username=nevodavid10&blogname=hashnode">
+<img src="https://github-blog-cards.vercel.app/blog?username=nevodavid10&blogname=hashnode"/>
+</a>
+```
+
+That Card that rendered
+
+<a href="https://github-blog-cards.vercel.app/blog?username=https://lo-victoria.com/&blogname=hashnode">
+<img src="https://github-blog-cards.vercel.app/blog?username=https://lo-victoria.com/&blogname=hashnode"/>
+</a>
+
+#### Dev Example
+
+```md
+<a href="https://github-blog-cards.vercel.app/blog?username=corpcubite&blogname=dev">
+<img src="https://github-blog-cards.vercel.app/blog?username=corpcubite&blogname=dev"/>
+</a>
+```
+
+That Card that rendered
+
+<a href="https://github-blog-cards.vercel.app/blog?username=corpcubite&blogname=dev">
+<img src="https://github-blog-cards.vercel.app/blog?username=corpcubite&blogname=dev"/>
+</a>
+
+### Index
+
+	@@ -117,19 +101,13 @@ This will result in fetching the 2<sup>nd</sup> and 3<sup>rd</sup> last Blog fro
+> If the index is not available or greater than 10 it will result in fetching the Most Recent Blog.
+
+```md
+<a href="https://github-blog-cards.vercel.app/blog?username=https://lo-victoria.com/&blogname=hashnode&index=2">
+<img src="https://github-blog-cards.vercel.app/blog?username=https://lo-victoria.com/&blogname=hashnode&index=2"/>
+</a>
+<a href="https://github-blog-cards.vercel.app/blog?username=https://lo-victoria.com/&blogname=hashnode&index=3">
+<img src="https://github-blog-cards.vercel.app/blog?username=https://lo-victoria.com/&blogname=hashnode&index=3"/>
+</a>
+```
+<a href="https://github-blog-cards.vercel.app/blog?username=https://lo-victoria.com/&blogname=hashnode&index=2">
+<img src="https://github-blog-cards.vercel.app/blog?username=https://lo-victoria.com/&blogname=hashnode&index=2"/>
+</a>
+<a href="https://github-blog-cards.vercel.app/blog?username=https://lo-victoria.com/&blogname=hashnode&index=3">
+<img src="https://github-blog-cards.vercel.app/blog?username=https://lo-victoria.com/&blogname=hashnode&index=3"/>
+</a>
+### Themes
+You can use the ```?theme=``` to change between the different theme.
+#### Themes Demo
 <div>
-  <img src="https://github.com/devicons/devicon/blob/master/icons/java/java-original-wordmark.svg" title="Java" alt="Java" width="40" height="40"/>&nbsp;
-  <img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original-wordmark.svg" title="React" alt="React" width="40" height="40"/>&nbsp;
-  <img src="https://github.com/devicons/devicon/blob/master/icons/spring/spring-original-wordmark.svg" title="Spring" alt="Spring" width="40" height="40"/>&nbsp;
-  <img src="https://github.com/devicons/devicon/blob/master/icons/materialui/materialui-original.svg" title="Material UI" alt="Material UI" width="40" height="40"/>&nbsp;
-  <img src="https://github.com/devicons/devicon/blob/master/icons/flutter/flutter-original.svg" title="Flutter" alt="Flutter" width="40" height="40"/>&nbsp;
-  <img src="https://github.com/devicons/devicon/blob/master/icons/redux/redux-original.svg" title="Redux" alt="Redux " width="40" height="40"/>&nbsp;
-  <img src="https://github.com/devicons/devicon/blob/master/icons/css3/css3-plain-wordmark.svg"  title="CSS3" alt="CSS" width="40" height="40"/>&nbsp;
-  <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-original.svg" title="HTML5" alt="HTML" width="40" height="40"/>&nbsp;
-  <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" title="JavaScript" alt="JavaScript" width="40" height="40"/>&nbsp;
-  <img src="https://github.com/devicons/devicon/blob/master/icons/firebase/firebase-plain-wordmark.svg" title="Firebase" alt="Firebase" width="40" height="40"/>&nbsp;
-  <img src="https://github.com/devicons/devicon/blob/master/icons/gatsby/gatsby-original.svg" title="Gatsby"  alt="Gatsby" width="40" height="40"/>&nbsp;
-  <img src="https://github.com/devicons/devicon/blob/master/icons/mysql/mysql-original-wordmark.svg" title="MySQL"  alt="MySQL" width="40" height="40"/>&nbsp;
-  <img src="https://github.com/devicons/devicon/blob/master/icons/nodejs/nodejs-original-wordmark.svg" title="NodeJS" alt="NodeJS" width="40" height="40"/>&nbsp;
-  <img src="https://github.com/devicons/devicon/blob/master/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" title="AWS" alt="AWS" width="40" height="40"/>&nbsp;
-  <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-original-wordmark.svg" title="Git" **alt="Git" width="40" height="40"/>
+<img src="https://github-blog-cards.vercel.app/blog?theme=radical&username=https://lo-victoria.com/&blogname=hashnode&index=2"/>
+<img src="https://github-blog-cards.vercel.app/blog?theme=github&username=https://lo-victoria.com/&blogname=hashnode&index=2"/>
+<img src="https://github-blog-cards.vercel.app/blog?theme=dark&username=https://lo-victoria.com/&blogname=hashnode&index=2"/>
+<img src="https://github-blog-cards.vercel.app/blog?theme=neon&username=https://lo-victoria.com/&blogname=hashnode&index=2"/>
+<img src="https://github-blog-cards.vercel.app/blog?theme=cobalt&username=https://lo-victoria.com/&blogname=hashnode&index=2"/>
+<img src="https://github-blog-cards.vercel.app/blog?theme=tokyonight&username=https://lo-victoria.com/&blogname=hashnode&index=2"/>
+<img src="https://github-blog-cards.vercel.app/blog?theme=synthwave&username=https://lo-victoria.com/&blogname=hashnode&index=2"/>
+<img src="https://github-blog-cards.vercel.app/blog?theme=dracula&username=https://lo-victoria.com/&blogname=hashnode&index=2"/>
+<img src="https://github-blog-cards.vercel.app/blog?theme=panda&username=https://lo-victoria.com/&blogname=hashnode&index=2"/>
+<img src="https://github-blog-cards.vercel.app/blog?theme=highcontrast&username=https://lo-victoria.com/&blogname=hashnode&index=2"/>
+<img src="https://github-blog-cards.vercel.app/blog?theme=github_dark&username=https://lo-victoria.com/&blogname=hashnode&index=2"/>
+<img src="https://github-blog-cards.vercel.app/blog?theme=slateorange&username=https://lo-victoria.com/&blogname=hashnode&index=2"/>
 </div>
-
-<!-- BLOG-POST-LIST:START -->
-# medium-blog-cards-workflow
-
-<!-- BLOG-POST-LIST:END -->
-
-### Latest StackOveflow activity of [@gautamkrishnar](https://github.com/gautamkrishnar)
+<details>
+<summary>:eyes: The RSS Feed Of Available Blogs</summary>
 <table>
-  <tr><th>Title</th><th>Link</th></tr>
-  <!-- STACKOVERFLOW:START -->
-- [Build a SpotifyData CLUI with Inquirer](https://medium.com/@vishalqw78/build-a-spotifydata-clui-with-inquirer-3109641e23c4?source=rss-a16f9755829------2)
-<!-- STACKOVERFLOW:END -->
-  VALUE_TO_UPDATE
+  <tr>
+    <th>Site</th>
+    <th>RSS Feed</th>
+  </tr>
+  <tr>
+    <td>Medium</td>
+    <td><a href="https://medium.com/feed/@your-username">https://medium.com/feed/@your-username</a></td>
+  </tr>
+  <tr>
+    <td>Dev.to</td>
+    <td><a href="https://dev.to/feed/@username">https://dev.to/feed/your-username</a></td>
+  </tr>
+  <tr>
+    <td>Hashnode</td>
+    <td><a href="blogname/rss.xml">https://blogname/rss.xml</a></td>
+  </tr>
 </table>
-
-<div>
-
-[![ Cards](https://github-blog-cards.vercel.app)](https://github-blog-cards.vercel.app)
-
-<a href="https://github-test-vishalqw78.vercel.app/blogsvg?urled=https://www.google.com/"><img  src="https://github-test-vishalqw78.vercel.app/blogsvg /></a>
-
-
-</div>
-
+</details>
