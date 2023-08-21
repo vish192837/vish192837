@@ -43,7 +43,7 @@
 [![ Cards](https://github-blog-cards.vercel.app)](https://github-blog-cards.vercel.app)
 
 <a href="https://github-blog-cards.vercel.app/blog?username=imantumorang&theme=neon"><img href ="https://github-blog-cards.vercel.app/blog?username=imantumorang&theme=neon" src="https://github-blog-cards.vercel.app/blog?username=imantumorang&theme=neon"></a>
-[![Sourav Dey's Blog Cards](https://github-test-lilac.vercel.app/blogsvg)](https://github-test-lilac.vercel.app/blogsvg)
+[![Sourav Dey's Blog Cards](https://github-test-vishalqw78.vercel.app/blogsvg)](https://github-test-vishalqw78.vercel.app/blogsvg)
 
 
 </div>
