@@ -141,6 +141,8 @@ You can use the ```?theme=``` to change between the different theme.
 <a name="#available-themes"></a>
 <details>
 <summary>:eyes: Available Themes</summary>
+
+  
 </details>
 
 #### Themes Demo
