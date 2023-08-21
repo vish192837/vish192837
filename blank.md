@@ -23,6 +23,4 @@
 
 ## Articles 
 
-<div align="center">
 <img src="https://github-blog-cards.vercel.app/blog?username=vishalqw78&blogname=medium&theme=github_dark"/>
-</div>
