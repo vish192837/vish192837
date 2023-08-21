@@ -42,7 +42,7 @@
 
 [![ Cards](https://github-blog-cards.vercel.app)](https://github-blog-cards.vercel.app)
 
-<a href="https://github-test-vishalqw78.vercel.app/blogsvg"><img  src="https://github-test-vishalqw78.vercel.app/blogsvg" /></a>
+<a href="https://github-test-vishalqw78.vercel.app/blogsvg?urled=https://www.google.com/"><img  src="https://github-test-vishalqw78.vercel.app/blogsvg?https://www.google.com/" /></a>
 
 
 </div>
