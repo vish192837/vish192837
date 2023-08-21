@@ -26,6 +26,7 @@ By integrating this feature, your profile gains visual appeal and keeps visitors
            - [Dev Example](#dev-example)
         - [Index](#index)
         - [Themes](#themes)
+           - [Available Themes](#available-themes)
            - [Themes Demo](#themes-demo)
 
 # Github Blog Card
@@ -135,6 +136,12 @@ This will result in fetching the 2<sup>nd</sup> and 3<sup>rd</sup> last Blog fro
 ### Themes
 
 You can use the ```?theme=``` to change between the different theme.
+
+## Available Themes
+<a name="#available-themes"></a>
+<details>
+<summary>:eyes: Available Themes</summary>
+</details>
 
 #### Themes Demo
 
