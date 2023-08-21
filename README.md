@@ -44,7 +44,7 @@
 
 <a href="https://github-blog-cards.vercel.app/blog?username=imantumorang&theme=neon"><img href ="https://github-blog-cards.vercel.app/blog?username=imantumorang&theme=neon" src="https://github-blog-cards.vercel.app/blog?username=imantumorang&theme=neon"></a>
 
-<a href="https://github-test-vishalqw78.vercel.app/blogsvg"><img  src="https://github-test-vishalqw78.vercel.app/blogsvg"></a>
+<img  src="https://github-test-vishalqw78.vercel.app/blogsvg">
 
 </div>
 
